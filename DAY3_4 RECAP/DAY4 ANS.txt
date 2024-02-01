@@ -1,0 +1,107 @@
+ANS 1- there are 4 types of loop - for, foreach,while , dowhile.
+
+ANS 2- loops are used to iterate some set of statements (repeat set of statements )
+ 
+ANS 3- in for loop everything (initialisation , condition , increment/decrement) has to be done in one/single line 
+whereas in while loop we can do initialisation before also but the condition must be there with the syntax and
+increment/ decrement can be done inside the loop only.
+
+ANS 4- do while statements execute atleast once , it do not ends with semicolon.
+while statements do not execute if the condition gets false, it ends with semicolon. 
+
+ANS 5- a is value here. 
+
+ANS 6- 1 , its an infinite loop 
+
+ANS 7- compilation error(; is not present)
+
+ANS 8- no error/ no output
+
+ANS 9- STATIC METHOD - a method which is directly created with static keyword, it can be directly executed without an object.
+classname.functioname;
+
+ANS 10- STATIC VARIABLE - a variable which is declared with static keyword.
+	all object will share same memory and same value. 
+	to assign a value to static variable, use static constructor.
+	it is accessible inside a static function.
+
+ANS 11- STATIC CLASS - a class where all members should be static, declared using static keyword and which can be accessed without creating its object.,
+ 
+ANS 12- STATIC VARIABLE is initialised using using static constructor.
+
+ANS 13- there are 2 types of data types - value type and reference type .
+value type -  value in stored in memory , others , store in stack LIFO
+reference type-  address is stored in memory of variable name , objects and strings , store in heap 
+
+ANS 14- BOXING - converting value type to reference type or implicit type casting .
+        UNBOXING - converting refernce type to value type or explicit type casting.  
+ 
+ANS 15- ARRAY is a collection of homogeneous data which is stored in a single variable with same name and saved sequentially in memory, differentiated using index number.
+datatype []arrayname = new datatype[array size].
+
+ANS 16- compilation error(data type mismatch)
+
+ANS 17- STACK AND HEAP stores elements in some manner , stack stores element in a LIFO form whereas heap stores element FIFO.
+
+ANS 18- call by value - when the parameters are pass by values creates separate copy in memory/ calling a function by passing value
+
+ANS 19- call by reference- calling a function by passing address of another memory(reference).
+
+ANS 20- call by value- creating multiple copies of memory, no changes are reflected , not using ref keyword , it is not faster.
+call by reference - no copy is created , changes to parameters are reflected , use ref keyword , it is faster.
+
+ANS 21- OUT parameters are used to return multiple values(any data type) from function .
+public void cal(int  num1, int num2, out int a , out int b, out int c)
+
+ANS 22- NAMED parameters are used to call function with parameters with a name in any order and can pass parameters in any sequence.
+
+ANS 23- object oriented programming is a programming based on objects , to create real world applications, we use this .
+
+ANS 24- Two important components of OOP - classes and objects 
+
+ANS 25- CLASS is just a blueprint /template . it is a real world entity which exists . it has member data and member functions.
+anything which is uniquely identified.
+
+ANS 26- Object is an instance of class .each object has own memory , own value and own copy of member data . 
+
+ANS 27- classname .objectname = new classname();
+
+ANS 28-each object has unique id.
+each object can interact with other object using functions calls.
+each object exist in some/particular state.
+
+ANS 29- abstraction 
+encapsulation
+inheritance 
+polymorphism
+
+ANS 30- abstraction is extracting relevant information , gathering all requiements
+
+ANS 31- ENCAPSULATION - hiding the (data )background details , showing only essential features .It is implemented through access specifier(private).
+(wrapping data and functiins as a package)
+
+ANS 32- inheritance is deriving the parent/base class functionality into child/ dervied class. /reusing an existing class
+
+ANS 33- NO 
+
+ANS 34- There are two types of polymorphism -
+run time (dynamic) - abstract classes , virtual functions 
+compile time (static) - function overloading , operator overloading 
+
+ANS 35- constructor is a special method that is invoked when instance of that class is created . 
+it doesnot have return type ,
+it has same name as class name.
+its used to initialise the members of the class.
+
+ANS 36- CLR generates the constructor automatically.
+classname obj - new classname(){ id = 1, name = "samatha"};
+
+ANS 37 - PROPERTY used to access private members outside the class.
+
+ANS 38- get (return the data) and set(assign the values)
+
+ANS 39 - read only(get)
+write only (set)
+read and write 
+
+ANS 40-

@@ -1,0 +1,78 @@
+ans1- its a predefined step by step approach which gives a solution to a problem . 
+
+ans2- .net framework is used to design , develop and deploy as .net application. 
+      it is only for windows and we can deploy it on windows server only.
+
+ans3- vb.net and c#
+
+ans4- namespaces are library in .net used to import predefine classes. 
+
+ans5- assembly is unit where your compiled code is present. it's also known as deployable unit or executable unit.
+      it contains metadata and  IL , typedetails.
+
+ans6- information about assembly(its version and name).
+
+ans7- information about your programs (classes, variables, class name and datatypes).
+
+ans8- CLR stands for common language runtime .it is runtime responsible for execution for .net framework .
+      it provides security to the code and controls the code. it 
+      checks for the unused/ unreffered object and transfers them to next generation. 
+      it executes any .net and any .net language.
+
+ans9- automatic garbage collection
+      multi version support using assembly
+      code access security
+	language interoperability using CTS
+	Platform independent
+
+ans10- CLR looks for unused/unreferred objects ,the object when its first created will goes to gen 0 .
+       CLR transfer objects to next gen when it notices that its still in use. 
+
+ans11- GC stands for garbage collector , it deletes the object that are marked idle by CLR and release 
+	 the memory space.
+
+ans12- multiple language interoperability is achieved by CLS (commom language sepcification)
+ 	and CTS(common type system) which is introduced by microsoft.
+
+ans13- CAS stands code access security , CLR provides security to the code or controls it in such a way 
+	that it can't be accessed by others.
+
+ans14- JIT stands for just in time compiler . it recompiles the IL into native/machine code. CLR loads the JIT.
+
+ans15- yes , different versions of dotnet app exists in a single computer. 
+	 CLR support assembly which contains different versions.
+
+ans16- Intermediate language is a compiled code.
+
+ans17- modular programming is dividing your program into small units where each unit is called as function or method.
+	easy to modify, debug , use ,read. 
+
+ans18- declaration(have acces specifier, return type, function name and parameters) and 
+	defination(body of function)
+
+ans19- yes , in c# methods and functions are same .
+
+ans20- access specifiers are keywords that provide access to your program . these are private, public , internal,
+ protected, internal protected. it specify the access to the function/variable/class.
+
+ans21- Default Access Specifier for class - internal , variable- public, function-public.
+
+ans22- void function which does not return any value to the caller.
+
+ans23- return value to the caller.
+
+ans24- line having operands and operators in which some calculations is there.
+
+ans26- x++ is  niether pre or post as it is having only one variable.
+
+ans27- 20 is greater than 10.
+
+ans28- compilation error .
+
+ans29- parameters are the variables that are defined when the function is declared .
+       arguments when we pass some value/data through the function when that function is called .
+
+ans30- default and optional are same .it should be the last in the parameter. 
+	public void add(int a, int b=2); 
+
+ans31- n number of parameter

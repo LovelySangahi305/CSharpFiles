@@ -1,0 +1,4 @@
+hello this is a file info program in  which we have created new file 1 using createfile() 
+This
+is Extra
+Text which is appended using AppendtoFile() 

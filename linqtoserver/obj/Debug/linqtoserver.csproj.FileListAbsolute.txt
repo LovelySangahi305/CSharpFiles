@@ -1,0 +1,7 @@
+C:\Users\LSANGAHI\Desktop\csharp\linqtoserver\bin\Debug\linqtoserver.exe.config
+C:\Users\LSANGAHI\Desktop\csharp\linqtoserver\bin\Debug\linqtoserver.exe
+C:\Users\LSANGAHI\Desktop\csharp\linqtoserver\bin\Debug\linqtoserver.pdb
+C:\Users\LSANGAHI\Desktop\csharp\linqtoserver\obj\Debug\linqtoserver.csproj.AssemblyReference.cache
+C:\Users\LSANGAHI\Desktop\csharp\linqtoserver\obj\Debug\linqtoserver.csproj.CoreCompileInputs.cache
+C:\Users\LSANGAHI\Desktop\csharp\linqtoserver\obj\Debug\linqtoserver.exe
+C:\Users\LSANGAHI\Desktop\csharp\linqtoserver\obj\Debug\linqtoserver.pdb

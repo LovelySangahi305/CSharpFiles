@@ -1,0 +1,59 @@
+Recap Day3 and Day4
+=====================
+1. How many types of loops are there in C#
+2. What are loops
+3. difference between for and while
+4. difference between while and do while
+5. foreach(var a in arr) what is a here index or value
+6. Predict the output
+int i=1;
+while(i<=10)
+{
+Console.WriteLine($"{i}");
+}
+7. Predict the output
+int i=1;
+do
+{
+Console.WriteLine($"{i}");
+i++;
+}
+while(i<=10)
+8. Predict the output
+for(int i=0;i<=10;i++);
+{
+Console.WriteLine($"{i}");
+}
+9. What is a static method
+10. what is a static variable
+11. what is a static class
+12. where do you initialize static variable
+13. Types of Dattypes
+14. What is boxing and unboxing
+15. What is an array and how to create an array
+16. int arr = new int[5]{1,2,3,4,5,6};
+What does the above code do
+17. What is stack and heap
+18.what is call by value
+19.  what is call by refrence
+20. difference between call by value and call reference
+21. What are out parameters and why and when do you use them
+22. what are named parameters
+23. What is object oriented programming and why
+24. Two important components of OOP
+25. what is a class
+26. what is an object
+27. syntax to create an object
+28. features of an object
+29. features of oopl
+30. what is abstraction
+31. What is encapsulation and how is it implemented
+32. What is inheritance
+33. Does dotnet supports multiple inheritance
+34. Types of polymorphism give examples
+35. what is a constructor and why
+36, what is auto implemented constructor
+37. What is property and why
+38. parts of a property
+39. Types of property
+40. auto implemented property

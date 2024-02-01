@@ -1,0 +1,76 @@
+ANS 1- overloading an operator to act like a method.
+
+ANS 2- In order to use operator with objects, we perform operator overloading.
+
+ANS 3- public static classname operator +(classname object)
+
+ANS 4- To access it without object
+
+ANS 5- Its a c# program which can refer to any function  , hence they are called as function pointers . they have same declaration as delegate. 
+
+ANS 6- WHY DELEGATE - based on event , a delgate should be able to execute the respective function.
+
+ANS 7- public  delegate void Mydelegate(string name)
+
+ANS 8- create a delegate , create an object/instance of delegate , invoke/ execute the function using delegate .
+
+ANS 9*- object.Invoke ()/ object()
+
+ANS 10- MULTICAST DELEGATE - one object of delegate can execute multiple functions.
+
+ANS 11- obj += new DelName(c.function name)
+
+ANS 12- system
+
+ANS 13- it is used in event driven programming or call back function.
+
+ANS 14- Action performed by user on screen . example - mouse click , mouse move , key press, select , maximize. minimize.
+
+ANS 15- code that executes in response to the event.
+
+ANS 16- code executes only and only when event occurs.
+
+ANS 17- a function without a name which is passed to a delegate , it uses goesto operator .
+mydelegate obj = delegate(int a, int b){return a +b ;};
+
+ANS 18- shortcut version of function, mostly used as a parameter to existing function and a complex code can be simplified.
+
+
+ANS 19- GOES TO :: it is used in lambda expression . => separates parameters from the body. it is calles as goes to because parameter is going to body.
+It is also known as arrow function in other language .
+
+ANS 20- language integrated query/querying
+
+ANS 21- LINQ can be used to query any datasource/anything (variable, array, generic, collection, object, xml, db). To add querying capability to c# language 
+while SQL is used to query database only.
+
+ANS 22- using linq query and using linq method
+
+ANS 23- using System.Linq;
+
+ANS 24- IEnumerable<> ::I- INTERFACE , used with foreach loop
+
+ANS 25- using Single();
+Employee emp = empList.Where(e => e.Empid == id).Single();
+
+ANS 26- var result = from a in Emplist where a.department =="sales" select a;
+
+ANS 27- IEnumnerable <Employee> name = names.where(a => a.department == "sales")
+
+ANS 28- PREDICATE - is a generic type delegate which takes input and return true/false --OR-- function which takes one input and return true/false.
+ANS 29- its a built in method of array class and returns the first match from the array.
+ 
+ANS 30-Syntax of Array.Find using predicate  
+
+Employee rahul = Array.Find(Emplist, PredicateMethod);
+public bool PredicateMethod(Employee emp) //its a predicate funtion and it will run as many times as the number of elements in array.
+{
+return emp.EmpName == " Rahul ";
+}
+
+ANS 31- Syntax of Array.Find using anonymous
+Employee rahul = Array.Find(Emplist, Employee emp) 
+return emp.EmpName == " Rahul ";
+});
+
+ANS 32- Syntax of Array.Find using lamdba

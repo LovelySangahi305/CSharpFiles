@@ -1,0 +1,12 @@
+C:\Users\LSANGAHI\Desktop\csharp\projectsolution\day14_AuthenticationLibrary\bin\Debug\net8.0\day14_AuthenticationLibrary.deps.json
+C:\Users\LSANGAHI\Desktop\csharp\projectsolution\day14_AuthenticationLibrary\bin\Debug\net8.0\day14_AuthenticationLibrary.dll
+C:\Users\LSANGAHI\Desktop\csharp\projectsolution\day14_AuthenticationLibrary\bin\Debug\net8.0\day14_AuthenticationLibrary.pdb
+C:\Users\LSANGAHI\Desktop\csharp\projectsolution\day14_AuthenticationLibrary\obj\Debug\net8.0\day14_AuthenticationLibrary.csproj.AssemblyReference.cache
+C:\Users\LSANGAHI\Desktop\csharp\projectsolution\day14_AuthenticationLibrary\obj\Debug\net8.0\day14_AuthenticationLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LSANGAHI\Desktop\csharp\projectsolution\day14_AuthenticationLibrary\obj\Debug\net8.0\day14_AuthenticationLibrary.AssemblyInfoInputs.cache
+C:\Users\LSANGAHI\Desktop\csharp\projectsolution\day14_AuthenticationLibrary\obj\Debug\net8.0\day14_AuthenticationLibrary.AssemblyInfo.cs
+C:\Users\LSANGAHI\Desktop\csharp\projectsolution\day14_AuthenticationLibrary\obj\Debug\net8.0\day14_AuthenticationLibrary.csproj.CoreCompileInputs.cache
+C:\Users\LSANGAHI\Desktop\csharp\projectsolution\day14_AuthenticationLibrary\obj\Debug\net8.0\day14_AuthenticationLibrary.dll
+C:\Users\LSANGAHI\Desktop\csharp\projectsolution\day14_AuthenticationLibrary\obj\Debug\net8.0\refint\day14_AuthenticationLibrary.dll
+C:\Users\LSANGAHI\Desktop\csharp\projectsolution\day14_AuthenticationLibrary\obj\Debug\net8.0\day14_AuthenticationLibrary.pdb
+C:\Users\LSANGAHI\Desktop\csharp\projectsolution\day14_AuthenticationLibrary\obj\Debug\net8.0\ref\day14_AuthenticationLibrary.dll

@@ -1,0 +1,83 @@
+ANS 1- int []arr = new int []; // this is wrong , either give data or size. 
+int []arr = new int [5];
+int []arr = new int []{1,2,3,4,5};
+int []arr = new int [5]{1,,2,3,4,5};
+int []arr = {1,2,3,4,5};
+
+ANS 2- ToCharArray() converts the string to character array.
+
+ANS 3- SPLIT() method takes a parameter and then a divides the sentence .
+
+ANS 4- It can be any string , space , any character , any comma , dot , colons , / ,  or semicolon .
+
+ANS 5- string s = (datatype) value , we have to do type casting 
+ToString();
+
+ANS 6- Array is a built in class and can be used with array of any data type, provides lot of ready made methods.
+
+ANS 7- Reverse() method reverses the  sequence of elements in entire array. 
+syntax- Array.Reverse(name of array)
+
+ANS 8- Arrayname.Split()
+
+ANS 9- Both are Built in functions of array class.
+ min() method finds and return the minimum value from the array whereas max() method finds and 
+return the maximum value from the array.
+
+ANS 10- Student [] s = new Student[];{
+new Student() {regno=1, name= "sal"},
+new Student() {regno=1, name= "sal"},
+} // array of Objects of class Student
+
+ANS 11- string [] names;
+	foreach (string a in names)
+	{
+    	if (a.StartsWith('char') && a.Length > 5)
+    	{
+        cw;
+    	}
+
+ANS 12- foreach(Employee a in employees)
+{
+if(a.Designation.Equals("manager"))
+{
+cw($"{a.empid}{e.empname}");
+}
+}
+
+ANS 13 - string [] names ;
+Array.Count('');
+
+ANS 14-Its fixed in size 
+ 	it cannot increase or decrease in size  at runtime .
+	its store data of same types .
+
+ANS 15- Collections is a built in namespace ,it is an array which can store data of any type . 
+it can increase or decrease the array size without loosing the data . collection of predefined classes and interfaces
+
+ANS 16 -TYPES OF COLLECTIONS :- 
+  	which work with key value pair ,
+ 	which work with index ,
+ 	which work with lifo , 
+	which work with fifo  , 
+	which work with index and keyvalue pair
+
+ANS 17- index 
+
+ANS 18- ArrayList.Add(value)  method 
+
+ANS 19- ArrayList arrayname = new ArrayList(){name : , id: , ...} // auto implemented collection
+
+ANS 20 - ArrayList using forloop ::
+ArrayList arrayList = new ArrayList();
+ for (int i = 0; i < arrayListname.Count; i++)
+{
+    Console.WriteLine(arrayList[i]);
+}
+
+ANS 21 - ArrayList using foreachloop ::
+ foreach(var varname in arraylistname)
+{
+Console.WriteLine($"{varname}");
+}
+

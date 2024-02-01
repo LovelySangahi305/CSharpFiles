@@ -1,0 +1,1 @@
+hello this is a file info program in  which we have created new file 1 using createfile() 

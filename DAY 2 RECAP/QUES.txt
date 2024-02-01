@@ -1,0 +1,56 @@
+Day2 Recap
+==========
+1. What is a framework
+2. What is dot net framework
+3. Name 2 languages supported by dotnet
+4. What are namespaces and why namespaces
+5. What is an assembly . Parts of assembly
+6. What is metadata
+7. What is typedetails
+8. What is CLR
+9. Features of CLR
+10. What are generations
+11. What GC
+12. How is multiple language integration achieved 
+13. what is CAS
+14. What is JIT
+15. Can different versions of dotnet app exists in a single computer
+16. What is Intermediate Language
+17. What is modular programming and how is it achieved
+18. two parts of a function
+19. In C# functions and methods are same or different
+20. What is are Access Specifiers
+21. Default Access Specifier for class, variable, function
+22. What is a void function
+23. What is a function with return type
+24. what is an expression
+25. difference between pre and post
+26. x++ is this pre or post
+27. 
+int a =20;
+if(a<10)
+{
+Console.WriteLine($"{a} is Less than 10");
+}
+else
+{
+Console.WriteLine($"{a} is greater than 10");
+}
+
+28.
+int a = 20;
+switch(a)
+{
+case 1:
+statements;
+break;
+case 2:
+statements;
+break;
+default:
+statements
+}
+Predict the output
+29.Difference between parameter and argument
+30.What are default and optional parameters
+31.How many parameters a function can have

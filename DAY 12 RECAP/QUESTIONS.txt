@@ -1,0 +1,38 @@
+Recap 11
+=====
+1. What is operator overloading 
+2. Why operator overloading
+3. Syntax of the declaration to overload an + operator
+4. Why should we declare the overload method as static
+5. What is a delegate
+6. Why Delegate
+7. Create a delegate for the following method
+ 
+public void SayHello(string name);
+ 
+8. Steps to work with a delegate
+9. Two different ways to execute a delegate
+10. What is multicast delegate
+11. How to create a multicast
+12. Delegates belong to which Namespace
+13. when to use a delegate
+14. what is an event
+15. what is an event handler
+16. What is event driven programming 
+17. What is an Anonymous method
+18. What is an Lambda Expression
+19. What is goes to operator
+20. What is LINQ
+21. Why LINQ
+22. Two ways to work with LINQ
+23. Which Namespace is used for LINQ
+24. Return type of Linq query or an Linq method 
+25. what if your query return only single value how to write a linq query or linq method
+26. write a linq query to display all the employees who belong to department Sales
+27. write a linq method to display all the employees who belong to department Sales
+28. What is a predicate
+29. What is Array.Find 
+30. Syntax of Array.Find using predicate
+31. Syntax of Array.Find using anonymous
+32. Syntax of Array.Find using lamdba
+ 

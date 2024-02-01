@@ -1,0 +1,14 @@
+C:\Users\LSANGAHI\Desktop\csharp\day8\bin\Debug\net8.0\day8.exe
+C:\Users\LSANGAHI\Desktop\csharp\day8\bin\Debug\net8.0\day8.deps.json
+C:\Users\LSANGAHI\Desktop\csharp\day8\bin\Debug\net8.0\day8.runtimeconfig.json
+C:\Users\LSANGAHI\Desktop\csharp\day8\bin\Debug\net8.0\day8.dll
+C:\Users\LSANGAHI\Desktop\csharp\day8\bin\Debug\net8.0\day8.pdb
+C:\Users\LSANGAHI\Desktop\csharp\day8\obj\Debug\net8.0\day8.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LSANGAHI\Desktop\csharp\day8\obj\Debug\net8.0\day8.AssemblyInfoInputs.cache
+C:\Users\LSANGAHI\Desktop\csharp\day8\obj\Debug\net8.0\day8.AssemblyInfo.cs
+C:\Users\LSANGAHI\Desktop\csharp\day8\obj\Debug\net8.0\day8.csproj.CoreCompileInputs.cache
+C:\Users\LSANGAHI\Desktop\csharp\day8\obj\Debug\net8.0\day8.dll
+C:\Users\LSANGAHI\Desktop\csharp\day8\obj\Debug\net8.0\refint\day8.dll
+C:\Users\LSANGAHI\Desktop\csharp\day8\obj\Debug\net8.0\day8.pdb
+C:\Users\LSANGAHI\Desktop\csharp\day8\obj\Debug\net8.0\day8.genruntimeconfig.cache
+C:\Users\LSANGAHI\Desktop\csharp\day8\obj\Debug\net8.0\ref\day8.dll

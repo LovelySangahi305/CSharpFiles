@@ -1,0 +1,53 @@
+Recap question
+==============
+1.What is EntityframeworkCore
+2.What is ORM 
+3.What is Mapping who does the mapping
+4.Is EFCore opensource,cross platform,light weight
+5.What is difference between EF and EFCore (2 differences)
+6.Different approaches in EFCore
+7.Name the libraries needed to be installed to work with EF Core
+8.How to install missing libraries in VisualStudio 2022
+9.What is scaffold-dbcontext and why do we use it
+10.Syntax of scaffold-dbcontext
+11.what is a dependency . Give an general day to day life example
+12. What is DI 
+13. Why DI
+14. What is IOC
+15. what does a dbcontext class do
+16. how does dbcontext class connects with database
+17. What is a connection string . give syntax
+18. What is M in MVC and why
+19. What is -OutputDir Models in scaffold-dbcontext?
+20. What happens if i donot write -OutputDir Models
+21. Syntax to get all the records or rows of the table
+22. Syntax to get a specific product with productid
+23. 
+public async Task<IActionResult> Details(int id)
+{
+  if (id == null)
+  {
+      return NotFound();
+  }
+
+  var student = await _context.Students
+      .FirstOrDefaultAsync(m => m.Id == id);
+
+
+
+  if (student == null)
+  {
+      return NotFound();
+  }
+
+  return View(student);
+}
+
+explain the asynchronous programming in this method
+
+24.What is C in MVC 
+25.what is a controller and why
+26.how to add a controller
+27. What is appsettings.json and why
+28. How to register DBContext as a service in program.cs give syntax
+29. What Libraries do i need to add for the above syntax

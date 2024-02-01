@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "LgbX4VgKbBkcX5d04/RlLxPBejvgSwtzqkjMkcVh0vngEJLe/j0MPIDrmkOt4wh/RyvqE4qOAwdaSemyVcFiZA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\LSANGAHI\\Desktop\\csharp\\day9\\day9.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\LSANGAHI\\.nuget\\packages\\soapformatter\\1.1.9\\soapformatter.1.1.9.nupkg.sha512"
+  ],
+  "logs": []
+}

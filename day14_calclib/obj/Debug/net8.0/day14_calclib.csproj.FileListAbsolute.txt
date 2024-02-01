@@ -1,0 +1,11 @@
+C:\Users\LSANGAHI\Desktop\csharp\day14_calclib\bin\Debug\net8.0\day14_calclib.deps.json
+C:\Users\LSANGAHI\Desktop\csharp\day14_calclib\bin\Debug\net8.0\day14_calclib.dll
+C:\Users\LSANGAHI\Desktop\csharp\day14_calclib\bin\Debug\net8.0\day14_calclib.pdb
+C:\Users\LSANGAHI\Desktop\csharp\day14_calclib\obj\Debug\net8.0\day14_calclib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LSANGAHI\Desktop\csharp\day14_calclib\obj\Debug\net8.0\day14_calclib.AssemblyInfoInputs.cache
+C:\Users\LSANGAHI\Desktop\csharp\day14_calclib\obj\Debug\net8.0\day14_calclib.AssemblyInfo.cs
+C:\Users\LSANGAHI\Desktop\csharp\day14_calclib\obj\Debug\net8.0\day14_calclib.csproj.CoreCompileInputs.cache
+C:\Users\LSANGAHI\Desktop\csharp\day14_calclib\obj\Debug\net8.0\day14_calclib.dll
+C:\Users\LSANGAHI\Desktop\csharp\day14_calclib\obj\Debug\net8.0\refint\day14_calclib.dll
+C:\Users\LSANGAHI\Desktop\csharp\day14_calclib\obj\Debug\net8.0\day14_calclib.pdb
+C:\Users\LSANGAHI\Desktop\csharp\day14_calclib\obj\Debug\net8.0\ref\day14_calclib.dll

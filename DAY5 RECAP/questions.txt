@@ -1,0 +1,28 @@
+1. Which of the following is the correct declaration of an array
+int[] arr = new int[];
+int arr[] = new arr[];
+int[] arr=new int[5];
+int[] arr = new int[]{1,2,3,4,5};
+int[] arr = new int[5]{1,2,3,4,5};
+int[] arr = {1,2,3,4,5};
+ 
+2. What does ToCharArray() do?
+3. What is Split() method do
+4. What are the parameters of Split method
+5. How to convert any datatype to string
+6. What is Array in C#
+7. What does Reverse() do in an Array give Syntax
+8. What does Split() do in an Array give Syntax
+9. What does Min() and Max() do in Array
+10. How to create an array of Objects of class Student
+11. Write a Syntax to dispaly values from a string array whose names starts with S and Length greater than 5
+12. Write a Syntax to display all Employees from Employees array whose Designation is Manager
+13. Syntax to count for a particular alphabet in a sentence
+14. Draw back of an array
+15. What are Collections and why
+16. Types of Collections
+17. ArrayList is a Collection class which works with __________-
+18. Which method is used to add values to a ArrayList
+19. What is auto implemented collection give syntax
+20. give syntax to display values from ArrayList using forloop
+21. give syntax to display values from ArrayList using foreach
