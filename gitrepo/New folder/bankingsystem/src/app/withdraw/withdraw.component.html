@@ -1,0 +1,19 @@
+<!-- <app-employeedashboard></app-employeedashboard> -->
+<body>
+    <div class="container">
+       <u> <h2>Withdraw Amount</h2> </u><br><br>
+        <form (ngSubmit)="onWithdraw()" #withdrawForm="ngForm">
+          <div class="form-group">
+            <label for="amount">Enter the Amount to be withdrawn =>  </label>
+            <span>
+            <input type="number" id="amount" name="amount" [(ngModel)]="withdrawAmount" required>
+        </span>
+          </div>
+          <br>
+        <br>
+          <div class="form-group">
+          <button type="submit" [disabled]="withdrawForm.invalid"><b>WITHDRAW</b></button>
+        </div>
+        </form>
+      </div>
+</body>

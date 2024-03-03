@@ -1,0 +1,67 @@
+body{
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+   background-size: cover;   
+   background-position: center;
+   text-align: center; 
+    padding: 100px 0;  
+    font-family:  cursive; 
+  } 
+
+.about-us-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-us-container h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .about-us-container p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .about-us-container h2 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+  
+  .about-us-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  .about-us-container ul li {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .social-media-links {
+    margin-top: 30px;
+  }
+  
+  .social-media-links h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .social-media-links i {
+    display: inline-block; 
+    margin-right: 10px; 
+     color: black; 
+    font-size: x-large;
+  }
+  
