@@ -1,0 +1,20 @@
+<app-employeedashboard></app-employeedashboard>
+<body>
+    <div class="container">
+       <u> <h2>Deposit Amount</h2> </u><br><br>
+        <form (ngSubmit)="onDeposit()" #withdrawForm="ngForm">
+          <div class="form-group">
+            <label for="amount">Enter the Amount to be deposited =>  </label>
+            <span>
+            <input type="number" id="amount" name="amount" [(ngModel)]="depositAmount" required>
+        </span>
+          </div>
+          <br>
+        <br>
+          <div class="form-group">
+          <button type="submit" [disabled]="withdrawForm.invalid"> <b>DEPOSIT</b> </button>
+        </div>
+        </form>
+      </div>
+</body>
+

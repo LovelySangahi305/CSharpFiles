@@ -1,0 +1,52 @@
+body
+{
+    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    background-size: cover; 
+   background-position: center;
+   text-align: center;
+   padding: 100px 0; 
+   font-family: cursive; 
+}
+h1{
+    background-color:  linear-gradient(to right, #ff105e, #ffad05);
+   color: white;
+  text-align: center;
+ }
+ 
+ .hero i
+ {
+   color: gre;  
+   font-size: xxx-large;
+ }
+ .hero h4 {
+   font-size: 20px; 
+   color:whitesmoke;
+ }
+
+ .achievements {
+   display: flex; 
+   justify-content: space-around; 
+   align-items: center;
+   padding: 5px 5px; 
+   /* margin-top: 30px; */
+ } 
+ 
+ .achievements .work {
+   display: flex;
+    flex-direction: column; 
+   justify-content: center;
+   align-items: center;
+    padding: 0 10px; 
+  
+ }
+ 
+ .achievements .work i {
+    color: white;  
+   font-size: xxx-large;
+   /* border-radius: 100%; */
+   /* border: 5px solid rgb(40, 35, 35);  */
+    padding: 20px; 
+  
+ }
+ 
+ 
