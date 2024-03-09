@@ -1,25 +1,30 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { Router, RouterModule } from '@angular/router';
 import { EmployeedashboardComponent } from '../employeedashboard/employeedashboard.component';
 
 @Component({
   selector: 'app-deposit',
   standalone: true,
-  imports: [CommonModule, FormsModule, EmployeedashboardComponent],
+  imports: [CommonModule, FormsModule, EmployeedashboardComponent, RouterModule],
   templateUrl: './deposit.component.html',
   styleUrl: './deposit.component.css'
 })
 export class DepositComponent implements OnInit {
   depositAmount: number = 0;
 
-  constructor() { }
+  constructor(private router: Router) { }
+  cancel()
+  {
+    this.router.navigate(['/accountlist']);
+  }
 
   ngOnInit(): void {
   }
 
   onDeposit() {
-    console.log('Deposit amount:', this.depositAmount);
+    alert("Amount Deposited successfully!");
     
   }
 }

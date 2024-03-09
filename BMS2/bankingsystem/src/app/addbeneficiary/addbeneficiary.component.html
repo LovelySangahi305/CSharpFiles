@@ -1,0 +1,56 @@
+<app-customernavbar></app-customernavbar>
+<div class="container mt-4">
+    <div class="row justify-content-center">
+      <div class="col-md-5">
+<div class="card bg-light mb-10" >
+<h5 class="card-header bg-primary text-white"> Add Beneficiary</h5>
+      <div class="card-body">
+        <form #beneficiaryForm="ngForm" (ngSubmit)="onSubmit(beneficiaryForm)">
+          <div>
+            <label for="name">Customer Name:</label>
+            <input type="text" class="form-control" placeholder="Enter Name" id="name" name="name" ngModel required #name="ngModel">
+            <span *ngIf= "name.invalid && (name.dirty || name.touched)">
+                <div style="color: red" *ngIf= "name.errors?.['required']">Customer Name is required.</div>
+            </span>
+            </div>
+          <BR>
+
+          <div class="form-group">
+            <label for="accountNumber">Account Number:</label>
+            <input type="text" class="form-control" placeholder="Enter Number" id="accountNumber" name="accountNumber" ngModel required pattern="[0-9]{9,18}" #accountNumber="ngModel">
+            <span *ngIf= "accountNumber.invalid && (accountNumber.dirty || accountNumber.touched)">
+                <div style="color: red" *ngIf= "accountNumber.errors?.['required']">Account Number is required.</div>
+                <div style="color: red" *ngIf= "accountNumber.errors?.['pattern']">Enter a valid account number.</div>
+            </span>
+            </div>
+          <BR>
+
+          <div class="form-group">
+            <label for="bank">Bank:</label>
+            <input type="text" class="form-control" placeholder="Enter Bank Name" id="bank" name="bank" ngModel required #bank="ngModel">
+            <span *ngIf= "bank.invalid && (bank.dirty || bank.touched)">
+                <div style="color: red" *ngIf= "bank.errors?.['required']">Bank Name is required.</div>
+            </span>
+          </div>
+          <br>
+
+          <div class="form-group">
+            <label for="ifscCode">IFSC Code:</label>
+            <input type="text" class="form-control" id="ifscCode" placeholder="Enter IFSC Code" name="ifscCode" ngModel required pattern="[A-Z]{4}[0][a-zA-Z0-9]{6}" #ifscCode="ngModel">
+            <span *ngIf= "ifscCode.invalid && (ifscCode.dirty || ifscCode.touched)">
+                <div style="color: red" *ngIf= "ifscCode.errors?.['required']">IFSC Code is required.</div>
+                <div style="color: red" *ngIf= "ifscCode.errors?.['pattern']">Enter a valid IFSC code (Example: ABCD0123456)</div>
+            </span>
+            
+          </div>
+          <br>
+          <div class="form-group">
+            <button class="btn btn-primary" type="submit" [disabled]="!beneficiaryForm.valid" (click)="onSubmit(beneficiaryForm)">Add Beneficiary</button>
+            <span style="margin-left: 10px;"></span>
+            <button class="btn btn-danger" type="button" (click)="cancel()"> Cancel</button>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  

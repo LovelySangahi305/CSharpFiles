@@ -1,19 +1,39 @@
-<!-- <app-employeedashboard></app-employeedashboard> -->
-<body>
-    <div class="container">
-       <u> <h2>Withdraw Amount</h2> </u><br><br>
+ <app-employeedashboard></app-employeedashboard> 
+
+ <div class="container mt-4">
+    <div class="row justify-content-center">
+      <div class="col-md-5">
+             <div class="card bg-light mb-3" style="max-width: 50rem;">
+                <h5 class="card-header bg-primary text-white">Withdraw Amount</h5>
+                 <div class="card-body">
         <form (ngSubmit)="onWithdraw()" #withdrawForm="ngForm">
+            <div class="form-group">
+                <label for="amount">Enter the Account ID  </label>
+                <input type="number" class="form-control" placeholder="Enter Id" id="account" name="account" ngModel required minlength="3" #account="ngModel" >
+                <span *ngIf= "account.invalid && (account.dirty || account.touched)">
+                    <div style="color: red;" *ngIf= "account.errors?.['required']">  Account Number is required.</div>
+                    <div style="color: red;" *ngIf= "account.errors?.['minlength']"> Invalid Account Number.</div>
+                  </span>
+              </div>
+              <br>
           <div class="form-group">
-            <label for="amount">Enter the Amount to be withdrawn =>  </label>
-            <span>
-            <input type="number" id="amount" name="amount" [(ngModel)]="withdrawAmount" required>
-        </span>
+            <label for="amount">Enter the Amount to be withdrawn   </label>
+            <input type="number" class="form-control" id="amount"  placeholder="Enter Amount" name="amount" ngModel required [min]="1" [max]="20000" #amount="ngModel">
+            <span *ngIf= "amount.invalid && (amount.dirty || amount.touched)">
+                <div style="color: red;" *ngIf= "amount.errors?.['required']">  Amount is required.</div>
+                <div style="color: red;" *ngIf= "amount.errors?.['min']"> Amount should be greater than 0.</div>
+                <div style="color: red;" *ngIf= "amount.errors?.['max']"> Amount should not exceed 20000 .</div>
+            </span>
           </div>
           <br>
-        <br>
-          <div class="form-group">
-          <button type="submit" [disabled]="withdrawForm.invalid"><b>WITHDRAW</b></button>
+           <div class="form-group">
+          <button class="btn btn-success" type="submit" [disabled]="withdrawForm.invalid"><b>WITHDRAW</b></button>
+          <span style="margin-left: 10px;"></span>
+          <button class="btn btn-danger" type="button" (click)="cancel()"> Cancel</button>
         </div>
         </form>
       </div>
-</body>
+    </div>
+</div>
+    </div>
+ </div>

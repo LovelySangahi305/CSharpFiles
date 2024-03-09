@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+.card
+{
+    font-size: large;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2); 
+    transition: 0.5s;
+    max-width: 100rem;
+}
+.card-header
+{
+ text-align: center;
+}
+th
+{
+    text-align: center;
+}
+.card input
+{
+    border: none; 
+    border-bottom: 2px solid black; 
+    outline: none; 
+}
+
+/* body{
+    background-image: url('../../assets/firstbg.jpeg');
+    background-size: cover;   
+    background-position: center; 
+} */
+
+

@@ -1,0 +1,31 @@
+<app-managernavbar></app-managernavbar>
+<div class="container mt-4">
+    <div class="card bg-light">
+            <h5 class="card-header bg-primary text-white">Our Dedicated Team </h5>
+            <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered"> 
+            <thead class="thead-dark">
+
+            <tr>
+              <th>Employee ID</th>
+              <th>Employee Name</th>
+              <th>Branch</th>
+              <th>Email ID</th>
+              <th>Date Of Joining</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor= "let employee of employees">
+            <td>{{ employee.id }}</td>
+              <td>{{ employee.name }}</td>
+              <td>{{ employee.branch }}</td>
+              <td>{{ employee.email }}</td>
+              <td>{{ employee.doj }}</td> -->
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      </div>
+</div>
+     

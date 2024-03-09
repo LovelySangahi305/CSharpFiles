@@ -12,18 +12,18 @@ import { Router, RouterModule } from '@angular/router';
 })
 export class CustomerloginComponent {
 
-  username: string = '';
-  password: string = '';
-
-  onSubmit() {
-    if (this.username && this.password) {
-    
-      console.log('Username:', this.username);
-      console.log('Password:', this.password);
-    }
-  }
   constructor(private router: Router) { }
+  onsubmit()
+  {
+    // alert("Successful Login!");
+    this.router.navigate(['/customernavbar']);
+  }
   customersignup() {
-    this.router.navigate(['customersignup']);
+    alert("SignUp Successful!");
+    this.router.navigate(['/customersignup']);
   } 
+  cancel()
+  {
+    this.router.navigate(['/homepage']);
+  }
 }

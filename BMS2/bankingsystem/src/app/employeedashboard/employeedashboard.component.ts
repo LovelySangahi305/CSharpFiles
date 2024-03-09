@@ -8,13 +8,38 @@ import { WithdrawComponent } from '../withdraw/withdraw.component';
 @Component({
   selector: 'app-employeedashboard',
   standalone: true,
-  imports: [ WithdrawComponent, DepositComponent, FundtransferComponent, CommonModule , RouterModule],
+  imports: [RouterModule],
   templateUrl: './employeedashboard.component.html',
   styleUrl: './employeedashboard.component.css'
 })
 export class EmployeedashboardComponent {
-
   constructor(private router: Router) { }
+// logout() {
+//   this.router.navigate(['']);
+// }
+// withdraw() {
+//   this.router.navigate(['withdraw']); 
+// }
+// deposit() {
+//   this.router.navigate(['deposit']); 
+// }
+// transferFunds() {
+//   this.router.navigate(['fundtransfer']); 
+// }
+// newAcc() {
+
+// }
+// newCustomer() {
+//   this.router.navigate(['createcustomer']); 
+// }
+// customerList() {
+//   this.router.navigate(['customerlist']);
+// }
+// accList() {
+//   this.router.navigate(['accountlist']);
+// }
+
+  
 
   accountlist()
   {
@@ -24,8 +49,8 @@ export class EmployeedashboardComponent {
   {
     this.router.navigate(['customerlist']);
   }
-  withdraw() {
-    this.router.navigate(['withdraw']); 
+  withdrawal() {
+    this.router.navigate(['withdrawal']); 
   }
   deposit() {
     this.router.navigate(['deposit']); 
@@ -41,6 +66,8 @@ export class EmployeedashboardComponent {
   fundtransfer() {
     this.router.navigate(['fundtransfer']); 
   }
-  
+  logout() {
+    this.router.navigate(['homepage']); 
+  }
   
 }

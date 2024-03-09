@@ -1,7 +1,4 @@
 nav{
-  background: linear-gradient(to right,rgba(3, 70, 103, 0.896), rgba(0, 191, 255, 0.089), rgb(12, 51, 195));
-    position: fixed;
-    top: 0;
-    left: 0;
-     width: 100%; 
+  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%); 
+  z-index: 3;
 } 

@@ -1,11 +1,4 @@
-body{
-    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
-   background-size: cover;   
-   background-position: center;
-   text-align: center; 
-    padding: 100px 0;  
-    font-family: cursive; 
-  } 
+
 
 .contact-container {
     max-width: 800px;

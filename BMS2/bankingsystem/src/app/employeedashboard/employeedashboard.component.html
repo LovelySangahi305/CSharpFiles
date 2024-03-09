@@ -1,35 +1,19 @@
-<body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-      <!-- <a class="navbar-brand" href="#">Features</a> -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/accountlist">List of Accounts</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/customerlist">List of Customers</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/withdraw">Withdraw Amount</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/deposit">Deposit Amount</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/createcustomer">Create Customer</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/createaccount">Create Account</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/fundtransfer">Fund Transfer</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/logout">Logout</a>
-          </li>
-        </ul>
-      </div>
+<nav class="navbar navbar-expand-lg navbar-custom ">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+          <a class="navbar-brand" href="#"></a>
+        <div class="navbar-nav">
+            <button class="nav-link" (click)="accountlist()">List of Accounts </button> 
+             <button class="nav-link" (click)="customerlist()">List of Customers </button> 
+             <button class="nav-link" (click)="withdrawal()">Withdraw Amount</button>
+             <button class="nav-link" (click)="deposit()">Deposit Amount</button>
+            <button class="nav-link" (click)="createcustomer()">Create Customer</button> 
+             <button class="nav-link" (click)="createaccount()">Create Account</button>
+            <button class="nav-link" (click)="fundtransfer()">Fund Transfer</button>
+            <button class="nav-link" (click)="logout()">Logout</button>
+        </div>
     </div>
-  </nav>
-</body>
+  </nav> 

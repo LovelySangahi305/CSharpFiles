@@ -1,0 +1,62 @@
+<app-managernavbar></app-managernavbar>
+<div class="container mt-4">
+    <div class="row justify-content-center">
+      <div class="col-md-5">
+<div class="card bg-light mb-10" >
+    <h5 class="card-header bg-primary text-white">Open Your Account Today</h5>
+    <div class="card-body">
+    <form #accountForm="ngForm" (ngSubmit)="onSubmit(accountForm)">
+      <div class="form-group">
+            <label for="customerId">Customer ID </label>
+                   <input type="text" placeholder="Enter Id" class="form-control" id="customerId" name="customerId" ngModel required #customerId="ngModel">
+              <span *ngIf= "customerId.invalid && (customerId.dirty || customerId.touched)">
+                <div style="color: red;" *ngIf= "customerId.errors?.['required']">Customer Id is required.</div>
+              </span>
+            </div>
+      <br>
+
+      <div class="form-group">
+       <label for="accountNumber">Account Number </label>
+        <input type="number" placeholder="Enter Number" class="form-control" id="accountNumber" name="accountNumber" ngModel required #accountNumber="ngModel">
+        <span *ngIf= "accountNumber.invalid && (accountNumber.dirty || accountNumber.touched)">
+            <div style="color: red;" *ngIf= "accountNumber.errors?.['required']">Account Number is required.</div>
+          </span>
+      </div>
+      <br>
+
+      <div class="form-group" >
+        <label for="accountType">Account Type </label>
+        <select id="accountType"  class="form-control" name="accountType" ngModel required #accountType="ngModel">
+          <option value="" disabled selected>Select Account Type</option>
+          <option value="Savings">Savings</option>
+          <option value="Current">Current</option>
+        </select>
+        <span *ngIf= "accountType.invalid && (accountType.dirty || accountType.touched)">
+            <div style="color: red;" *ngIf= "accountType.errors?.['required']">Account Type is required.</div>
+          </span>
+      </div>
+      <br>
+
+      <div class="form-group">
+        <label for="initialDeposit">Initial Deposit </label>
+        <input type="number" placeholder="Add amount" class="form-control" id="initialDeposit" name="initialDeposit" ngModel required [min]="100" #initialDeposit="ngModel">
+        <span *ngIf= "initialDeposit.invalid && (initialDeposit.dirty || initialDeposit.touched)">
+            <div style="color: red;" *ngIf= "initialDeposit.errors?.['required']">Initial Deposit is required.</div>
+            <div style="color: red;" *ngIf= "initialDeposit.errors?.['min']">Minimum Deposit should be 100.</div>
+          </span>
+      </div>
+      <div>
+        <br>
+
+        <div class="form-group">
+      <button class="btn btn-success" type="submit" [disabled]="!accountForm.valid" (click)="onSubmit(accountForm)">Create Account</button>
+      <span style="margin-left: 10px;"></span>
+      <button class="btn btn-danger" type="button" (click)="cancel()"> Cancel</button>
+    </div>
+    </div>
+    </form>
+    
+  </div>
+  </div>
+  </div>
+

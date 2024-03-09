@@ -1,31 +1,49 @@
-<app-employeedashboard></app-employeedashboard>
-<body>
-    <div class="container">
-        <u><h2>Fund Transfer</h2></u><br><br>
-
-        <form #fundTransferForm="ngForm" (ngSubmit)="transferFunds(fundTransferForm)">
-          <div class="form-group">
-            <label for="senderAccount">Sender Account =></label>
-            <input type="text" id="senderAccount" name="senderAccount" ngModel required>
-          </div>
+ <app-employeedashboard></app-employeedashboard>
+        <div class="container mt-4">
+            <div class="row justify-content-center">
+              <div class="col-md-5">
+        <div class="card bg-light mb-10" style="max-width: 50rem;">
+    <h5 class="card-header bg-primary text-white">Fund Transfer</h5>
+<div class="card-body">
+        <form #fundTransferForm="ngForm" (ngSubmit)="transferFunds()">
+            <div class="form-group">
+            <label for="senderAccount" >Sender Account Number</label>
+          <input type="number" class="form-control" id="senderAccount"  placeholder="Type Number" name="senderAccount" ngModel required minlength="2" #senderAccount="ngModel">
+            <span *ngIf= "senderAccount.invalid && (senderAccount.dirty || senderAccount.touched)">
+                <div style="color: red;" *ngIf= "senderAccount.errors?.['required']"> Sender Account Number is required.</div>
+                <div style="color: red;" *ngIf= "senderAccount.errors?.['minlength']"> Invalid Account Number.</div>
+              </span>
+            </div>
          <br>
+        <div class="form-group">
+           <label for="receiverAccount">Receiver Account Number</label>
+        <input type="number"  class="form-control" id="receiverAccount"  placeholder="Type Number"  name="receiverAccount" ngModel required minlength="2" #receiverAccount="ngModel"> 
+            <span *ngIf= "receiverAccount.invalid && (receiverAccount.dirty || receiverAccount.touched)">
+                <div style="color: red;" *ngIf= "receiverAccount.errors?.['required']"> Receiver Account Number is required.</div>
+                <div style="color: red;" *ngIf= "receiverAccount.errors?.['minlength']"> Invalid Account Number.</div>
+              </span>
+            </div>
+            <br>
 
           <div class="form-group">
-            <label for="receiverAccount">Receiver Account =></label>
-            <input type="text" id="receiverAccount" name="receiverAccount" ngModel required>
-          </div>
-         
-<br>
-          <div class="form-group">
-            <label for="amount">Amount to be transferred =></label>
-            <input type="number" id="amount" name="amount" ngModel required>
-          </div>
-          <br><br>
+        <label for="amount">Amount to be transferred</label>
+        <input type="number" class="form-control" id="amount" name="amount"  placeholder="Enter Amount" ngModel required [min]="1" [max]="50000" #amount="ngModel">
+            <span *ngIf= "amount.invalid && (amount.dirty || amount.touched)">
+                <div style="color: red;" *ngIf= "amount.errors?.['required']"> Amount is required.</div>
+                <div style="color: red;" *ngIf= "amount.errors?.['min']"> Minimum amount should be greater than 0.</div>
+                <div style="color: red;" *ngIf= "amount.errors?.['max']"> Maximum limit is 50000, Do not exceed.</div>
+            </span>
+    </div>
+          <br>
 
           <div class="form-group">
-          <button type="submit" [disabled]="fundTransferForm.invalid"> <b>Transfer Funds</b> </button>
+          <button class ="btn btn-success" type="submit" [disabled]="fundTransferForm.invalid" (click)="transferFunds()"> <b>Transfer Funds</b> </button>
+          <span style="margin-left: 10px;"></span>
+          <button class="btn btn-danger" type="button" (click)="cancel()"> Cancel</button>
         </div>
-
         </form>
       </div>
-    </body>
+</div>
+</div>
+            </div>
+        </div>

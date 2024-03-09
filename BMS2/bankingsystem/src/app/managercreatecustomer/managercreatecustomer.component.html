@@ -1,0 +1,131 @@
+<app-managernavbar></app-managernavbar>
+
+    <div class="container mt-4">
+        <div class="row justify-content-center">
+          <div class="col-md-5">
+    <div class="card bg-light mb-10" >
+    <h5 class="card-header bg-primary text-white">Join Our Banking Family</h5>
+    <div class="card-body">
+
+        <form #customerForm="ngForm" (ngSubmit)="onSubmit(customerForm)">
+            <div class="form-group">
+                <label for="customerId">Customer ID </label>
+                <input type="text" class="form-control" id="customerId" placeholder ="Enter ID" name="customerId" ngModel required #customerId="ngModel">
+                      <span *ngIf= "customerId.invalid && (customerId.dirty || customerId.touched)">
+                        <div style="color: red;" *ngIf= "customerId.errors?.['required']">Customer Id is required.</div>
+                      </span>
+                    </div>
+              <br>
+          <div class="form-group">
+            <label for="Name">Customer Name </label>
+            <div class="row">
+                <div class="col">
+            <input type="text" class="form-control" id="firstName" placeholder ="firstName" name="firstName" ngModel required #firstName="ngModel">
+                  <span *ngIf= "firstName.invalid && (firstName.dirty || firstName.touched)">
+                    <div style="color: red;" *ngIf= "firstName.errors?.['required']">First Name is required.</div>
+                  </span>
+                </div>
+          <div class="col">
+            <input type="text" class="form-control" id="lastName"  placeholder ="lastName" name="lastName" ngModel required #lastName="ngModel">
+                  <span *ngIf= "lastName.invalid && (lastName.dirty || lastName.touched)">
+                    <div style="color: red;" *ngIf= "lastName.errors?.['required']">Last Name is required.</div>
+                  </span>
+                </div>
+            </div>
+            </div>
+          <br>
+
+          <div class="form-group">
+            <label for="gender">Gender</label>
+            <select id="gender" class="form-control"  name="gender" ngModel required #gender="ngModel">
+              <option value="" disabled>Select Gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+            <span *ngIf= "gender.invalid && (gender.dirty || gender.touched)">
+                <div style="color: red;" *ngIf= "gender.errors?.['required']">Gender is required.</div>
+            </span>
+          </div>
+          <br>
+
+          <div class="form-group">
+            <label for="dob">Date of Birth </label>
+            <input type="date" id="dob" placeholder ="Select Dob" class="form-control" name="dob" ngModel required (change)="validateDOB(dob)" #dob="ngModel">
+                  <span *ngIf= "dob.invalid && (dob.dirty || dob.touched)">
+                    <div style="color: red;" *ngIf= "dob.errors?.['required']">Date of Birth is required.</div>
+                    <div  style="color: red;"  *ngIf= "dob.errors?.['ageInvalid']">You must be at least 18 years old</div>
+                </span>
+                </div>
+          <br>
+
+          <div class="form-group">
+            <label for="phoneNumber">Phone Number </label>
+            <input type="number" class="form-control" placeholder ="Enter phone number" id="phoneNumber" name="phoneNumber" ngModel required pattern="[0-9]{10}" #phoneNumber="ngModel">
+                  <span *ngIf= "phoneNumber.invalid && (phoneNumber.dirty || phoneNumber.touched)">
+                    <div style="color: red;" *ngIf= "phoneNumber.errors?.['required']">Phone Number is required.</div>
+                    <div  style="color: red;"  *ngIf= "phoneNumber.errors?.['pattern']">Phone Number should be of 10 digits only</div>
+                </span>
+                </div>
+          <br>
+
+          <div class="form-group">
+            <label for="address">Address</label>
+            <input type="address" class="form-control" placeholder ="Enter address here" id="address" name="address" ngModel required  #address="ngModel">
+                  <span *ngIf= "address.invalid && (address.dirty || address.touched)">
+                    <div style="color: red;" *ngIf= "address.errors?.['required']">Address is required.</div>
+                </span>
+                </div>
+          <br>
+
+          <div class="form-group">
+            <label for="email">Email ID </label>
+            <input type="email" class="form-control" placeholder ="Enter email id" id="email" name="email" ngModel required email #email="ngModel">
+                  <span *ngIf= "email.invalid && (email.dirty || email.touched)">
+                    <div style="color: red;" *ngIf= "email.errors?.['required']">Email ID is required.</div>
+                    <div  style="color: red;"  *ngIf= "email.errors?.['email']">Invalid email format.</div>
+                </span>
+                </div>
+          <br>
+
+          <div class="form-group">
+                <label for="password"> Password</label>
+                <input type="password" class="form-control" id="password" placeholder ="Enter Password" name="password" ngModel required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" #password="ngModel">
+                <span *ngIf= "password.invalid && (password.dirty || password.touched)">
+                  <div style="color: red;" *ngIf= "password.errors?.['required']">password is required.</div>
+                  <div  style="color: red;" *ngIf= "password.errors?.['pattern']">Invalid password format(requires a minimum of 8 characters, at least one uppercase letter, one lowercase letter, one digit, and one special character)</div>
+                </span>
+              </div>
+          <br>
+
+          <div class="form-group">
+            <label for="aadharNumber"> AadharCard Number</label>
+            <input type="aadharNumber" class="form-control" placeholder ="Enter Aadhar Number" id="aadharNumber" name="aadharNumber" ngModel required pattern="^[2-9]{1}[0-9]{3}[0-9]{4}[0-9]{4}$" #aadharNumber="ngModel">
+            <span *ngIf= "aadharNumber.invalid && (aadharNumber.dirty || aadharNumber.touched)">
+              <div style="color: red;" *ngIf= "aadharNumber.errors?.['required']">Aadhar Number is required.</div>
+              <div  style="color: red;" *ngIf= "aadharNumber.errors?.['pattern']">Invalid Aadhar Number </div>
+            </span>
+          </div>
+<br>
+          <div class="form-group">
+            <label for="panNumber"> PAN Number</label>
+            <input type="panNumber" class="form-control" placeholder ="Enter Pan Number" id="panNumber" name="panNumber" ngModel required pattern="^[A-Z]{5}[0-9]{4}[A-Z]{1}$" #panNumber="ngModel">
+            <span *ngIf= "panNumber.invalid && (panNumber.dirty || panNumber.touched)">
+              <div style="color: red;" *ngIf= "panNumber.errors?.['required']">Pan Number is required.</div>
+              <div  style="color: red;" *ngIf= "panNumber.errors?.['pattern']">Invalid Pan Number </div>
+            </span>
+          </div>
+      <br>
+          <div class="form-group">
+          <button class="btn btn-success" type="submit" [disabled]="!customerForm.valid" (click)="onSubmit(customerForm)">Create Profile</button>
+      <span style="margin-left: 10px;"></span>
+      <button class="btn btn-danger" type="button" (click)="cancel()"> Cancel</button>
+        </div>
+        </form>
+      </div>
+</div>
+          </div>
+        </div>
+    </div>
+    
+      

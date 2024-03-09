@@ -6,7 +6,7 @@ import { Router, RouterModule } from '@angular/router';
 @Component({
   selector: 'app-customersignup',
   standalone: true,
-  imports: [FormsModule ,CommonModule],
+  imports: [FormsModule , CommonModule , RouterModule],
   templateUrl: './customersignup.component.html',
   styleUrl: './customersignup.component.css'
 })
@@ -16,9 +16,12 @@ export class CustomersignupComponent {
   onSubmit(form: NgForm) {
 
     if (form.valid) {
-      // Form is valid, perform signup action
-      console.log('Form submitted successfully!');
-  this.router.navigate(['customerdashboard']);
+     alert('Form submitted successfully!');
+  this.router.navigate(['accountlist']);
     }
-}
+  }
+    cancel()
+    {
+      this.router.navigate(['homepage']);
+    }
 }

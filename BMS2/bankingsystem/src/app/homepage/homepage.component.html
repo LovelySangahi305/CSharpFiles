@@ -1,36 +1,82 @@
-<head>
-    <title>Bank Application</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  </head>
-<body>
-    <div class="hero">
-        <h1>WELCOME</h1><h1>TO</h1><h1>EVERCREST BANK</h1>
-       <!-- <h2>Invest in your dreams, Bank with US</h2> -->
-        <!-- <div  id="container">
-            <img id="bankpic" src="../assets/bankpic.jpg" alt="bank pic">
-          </div> --> 
-        <i class="fas fa-handshake"></i>
-       <br><br>
-    
-        <h4> Your financial friend is now serving your thoughts!! <Br>
-        Explore our range of banking services and start managing your finances today with us !!</h4>
-     
-      <div class="achievements">
-        <div class="work">
-          <i class="fas fa-users"></i>
-           <a routerLink="/customerlogin">Customer Login</a> 
+<div> 
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="overlays"></div>
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">   
+      <div class="carousel-item active" data-bs-interval="3000">
+        <img src="../../assets/digitalrevolution.jpg" class="d-block w-100" alt="digi">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Join our Digital Revolution</h5>
+          <p>Experience the convenience of managing your finances on-the-go with our user-friendly online banking app..</p>
         </div>
-    
-        <div class="work">
-          <i class="fas fa-user-tie"></i>
-          <a routerLink="/managerlogin">Manager Login</a> 
+  
+     </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="../../assets/contactlessservice.png" class="d-block w-100" alt="contactlessservice">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>TapAhead</h5>
+          <p>Pioneering the next generation of contactless banking solutions.</p>
         </div>
-    
-        <div class="work">
-          <i class="fas fa-user"></i>
-          <!-- <button>Employee Login</button> -->
-          <a routerLink="/employeelogin">Employee Login</a> 
-          </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="../../assets/addbeneficiary.png" class="d-block w-100" alt="beneficiary">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Smooth sailing ahead</h5>
+          <p>Adding beneficiaries, making transfers a breeze!</p>
+        </div>
       </div>
     </div>
-</body>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  </div>
+
+
+<div class="video-container">
+  <video autoplay muted loop id="video-background">
+  <source src="../../assets/video1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+  <div class="col"><img class ="img2" src="../../assets/onlineshopping.jpg"  alt="onlineshopping"></div>
+  <div class="col"><img class ="img2" src="../../assets/card.jpg"  alt="card"></div>
+  <div class="col"><img class ="img2" src="../../assets/moneysave.jpg"  alt="moneysave"></div>
+
+  <div class="w-100"></div>
+  <div class="col">Column</div>
+  <div class="col">Column</div>
+  <div class="col">Column</div>
+</div>
+</div>
+
+
+  <div style="background-color: gainsboro;">
+    <div class="container" style="margin-bottom: 60px;">
+    <div class="row">
+      <div class="col"><b>Average Rating</b></div>
+      <div class="col"><b>Our Guarantee</b></div>
+      <div class="col"><b>Free Updates</b></div>
+      <div class="col"><b>Free Support</b></div>
+      <div class="w-100"></div>
+      <div class="col"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>4.9/5</div>
+      <div class="col">100% money back</div>
+      <div class="col">Never pay for an update</div>
+      <div class="col">6 months included</div>
+    </div>
+    </div>
+    </div>
+   
